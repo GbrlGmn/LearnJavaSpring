@@ -1,0 +1,13 @@
+É a estrutura da entidade que vai virar tabela no banco.
+
+Exemplo no seu projeto:
+
+public class Food {
+    private Long id;
+    private String name;
+    private Double price;
+}
+
+🔹 Mapeia para o banco (com @Entity)
+🔹 Representa objeto do mundo real
+🔹 Não contém regra de negócio complexa

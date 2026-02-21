@@ -1,0 +1,24 @@
+É a porta de entrada da aplicação (HTTP)
+
+Recebe requisição do cliente (React, Postman, navegador) e devolve resposta.
+
+Exemplo:
+
+@RestController
+@RequestMapping("/foods")
+public class FoodController {
+
+    @Autowired
+    private FoodService service;
+
+    @GetMapping
+    public List<Food> findAll() {
+        return service.findAll();
+    }
+}
+
+🔹 Recebe requisição
+🔹 Chama o Service
+🔹 Retorna resposta (JSON)
+
+tem duas possibilidades, via anoteition @Autowired ou com o construtor

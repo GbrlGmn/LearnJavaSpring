@@ -1,0 +1,20 @@
+Onde fica a regra de negócio
+Aqui é o cérebro da aplicação.
+Exemplo:
+
+@Service
+public class FoodService {
+
+    @Autowired
+    private FoodRepository repository;
+
+    public List<Food> findAll() {
+        return repository.findAll();
+    }
+}
+
+Mas pode ter regras como:
+Validar preço
+Verificar estoque
+Aplicar desconto
+Regras antes de salvar

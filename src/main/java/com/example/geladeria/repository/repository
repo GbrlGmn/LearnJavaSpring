@@ -1,0 +1,13 @@
+Responsável por acessar o banco de dados
+
+É quem conversa com o banco.
+
+Exemplo:
+
+@Repository
+public interface FoodRepository extends JpaRepository<Food, Long> {
+}
+
+🔹 Faz CRUD
+🔹 Executa queries
+🔹 Não tem regra de negócio
